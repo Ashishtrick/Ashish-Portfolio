@@ -39,11 +39,11 @@ nav{
 }
 b{
     text-decoration: none;
-    color: #7f00ff;
+    color: #de6262;
     font-size: 40px;
 }
 .Header:hover{
-    color: #7f00ff;
+    color: #de6262;
 }
 .nav-items{
     display: flex;
@@ -63,7 +63,7 @@ b{
 
 .nav-items li a:hover,
 .social-icons a:hover{
-    color: #7f00ff;
+    color: #de6262;
 }
 
 .social-icons a{
@@ -76,18 +76,73 @@ b{
 
 .wrapped{
     display: flex;
+    width:  100%;
+    height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    width:  100%;
+    padding: 0 6%;
     overflow: hidden;
-    padding: 0 10%;
 }
+/* .wrapped::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left:-12%;
+    top:50%;
+    background:linear-gradient(45deg,#de6262,#ffb88c);
+    animation: object1 6s linear infinite;
+} */
+.wrapped::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left:60%;
+    top: 22%;
+    background:linear-gradient(45deg,#de6262,#ffb88c);
+    animation: object1 6s linear infinite;
+}
+.wrapped::after{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top:57%;
+    background:linear-gradient(45deg,#de6262,#ffb88c);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    
+    50%{
+        left:63%;
+        top: 24%;
+        right:43%
+    }
+    
+   
+}
+@keyframes object2{
+    50%{
+        left:-13;
+        top: 41%;
+    }
+   
+}
+    
+
 
 .cols{
     width : 50%;
 }
-
+.cols0{
+    width : 100%;
+    z-index: 5 ;
+}
 .topline{
     display:block;
     position: relative;
@@ -102,7 +157,7 @@ b{
     width: 45px;
     height: 4px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #de6262;
 }
 
 h1{
@@ -113,7 +168,7 @@ h1{
 }
 
 .multitext{
-color: #7f00ff;
+color: #de6262;
 text-transform: capitalize;
 }
 
@@ -146,7 +201,7 @@ button{
 }
 
 button:hover{
-    background-color: #7f00ff;
+    background-color: #de6262;
 }
 
 .imgbox{
@@ -155,11 +210,21 @@ button:hover{
     height: 100%;
 }
 
-.imgbox img{
+ .imgbox img{
     position: relative;
     height: 600px;
     width: calc(130% - 80px);
-    top: 100px;
-    right: 50px;
+    top: 40px;
+    right: 40px;
+    animation: alternate;
   
-}
+} 
+
+/* .imgbox #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)rotate(-25deg);
+    width: 100%;
+    filter: saturate(200%);  
+}  */
