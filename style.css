@@ -116,7 +116,7 @@ b{
     background:linear-gradient(45deg,#de6262,#ffb88c);
     animation: object2 6s linear infinite;
 }
-@keyframes object1{
+/* @keyframes object1{
     
     50%{
         left:63%;
@@ -125,14 +125,14 @@ b{
     }
     
    
-}
-@keyframes object2{
+} */
+/* @keyframes object2{
     50%{
         left:-13;
         top: 41%;
     }
    
-}
+} */
     
 
 
@@ -177,6 +177,7 @@ p{
     font-size: 1.1em;
     color: #3d535f;
     width: 95%;
+    font-weight: 500;
 }
 
 .btns{
